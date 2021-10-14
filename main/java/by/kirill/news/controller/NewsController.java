@@ -46,7 +46,7 @@ public class NewsController {
     }
 
     @PostMapping("/create")
-    public ModelAndView createNews(@ModelAttribute("news") News news) {
+    public ModelAndView createNews(@Valid @ModelAttribute("news") News news) {
         ModelAndView modelAndView = new ModelAndView();
         news.setDate(LocalDate.now());
         newsService.createNews(news);
@@ -95,4 +95,3 @@ public class NewsController {
         return "redirect:/news/main";
     }
 }
-

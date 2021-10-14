@@ -69,44 +69,20 @@
 </head>
 <body>
 <div class="form-style-10">
-    <h1><spring:message code="local.text.edit.news"/><span><spring:message code="local.text.edit.news"/></span></h1>
-        <br>
-    <c:if test="${not empty param.error}">
-    <span style="color: red; font-size: 17px;"> <spring:message
-            code="local.password" />
-			</span>
-    </c:if>
-
-    <c:if test="${not empty param.messageRegistrationOK}">
-    <span style="color: #408080; font-size: 17px;"> <spring:message
-            code="local.welcome" />
-			</span>
-    </c:if>
-
-    <form:form
-            action="${pageContext.request.contextPath}/authenticateTheUser"
-            method="POST">
+    <h1><spring:message code="local.button.authorization"/><span><spring:message
+            code="local.button.authorization"/></span></h1>
+    <form:form action="${pageContext.request.contextPath}/authenticateUser" method="POST">
     <p>
-        <input type="text"
-               placeholder="<spring:message
-				code="local.username" />"
-               name="name"/><br>
+        <input type="text" placeholder="<spring:message code="local.username" />" name="name"/>
+        <br>
         <form:errors path="userName" cssClass="error"/>
     </p>
-
     <p>
-        <input type="password"
-               placeholder="<spring:message
-				code="local.password" />"
-               name="pass"/><br>
+        <input type="password" placeholder="<spring:message code="local.password" />" name="pass"/><br>
         <form:errors path="password" cssClass="error"/>
     </p>
-
     <br>
-    <div style="margin-top: 10px">
-        <input type="submit"
-        />
-    </div>
+    <input type="submit"/>
     </form:form>
 
 </body>

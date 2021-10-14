@@ -71,7 +71,7 @@
 <body>
 <br>
 <div class="form-style-10">
-    <h1><spring:message code="local.news"/><span><spring:message code="local.text.news"/></span></h1>
+    <h1><spring:message code="local.registration"/><span><spring:message code="local.registration"/></span></h1>
     <form action="${pageContext.request.contextPath}/news/main">
         <button><spring:message code="local.button.main"/></button>
     </form>

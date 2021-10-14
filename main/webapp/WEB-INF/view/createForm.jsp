@@ -85,7 +85,7 @@
         <form:hidden path="id"/>
         <br>
         <spring:message code="local.news.title"/>:<br>
-        <form:input path="title"/>
+        <form:input path="title"  />
         <div class="privacy-policy">
             <form:errors path="title" style="color: red;"/>
         </div>

@@ -64,7 +64,8 @@
             background: #2A6881;
             -moz-box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.28);
             -webkit-box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.28);
-            box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.28);}
+            box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.28);
+        }
 
         .form-style-10 .privacy-policy {
             float: right;
@@ -88,23 +89,20 @@
         <br>
         <spring:message code="local.news.title"/>:<br>
         <form:input path="title"/>
-        <div class="privacy-policy">
-            <form:errors path="title" style="color: red;"/>
-        </div>
+        <form:errors path="title" style="color: red;"/>
+
         <br>
         <spring:message code="local.news.text"/>:<br>
         <form:input path="brief"/>
         <br>
         <spring:message code="local.news.text"/>:<br>
-        <div class="label"></div>
         <form:textarea path="text"/>
-        <br>
-        <br>
-        <br>
-        <input type="submit" value=
-            <spring:message code="local.button.submit"/>
-                </div>
-        </form:form>
     </div>
-</body>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value=
+        <spring:message code="local.button.submit"/>
+    </form:form>
+            </body>
 </html>

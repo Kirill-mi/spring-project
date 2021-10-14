@@ -75,7 +75,7 @@
     </form>
     <br>
     <form action="${pageContext.request.contextPath}/registrationPage">
-        <button><spring:message code="local.button.authorization"/></button>
+        <button><spring:message code="local.registration"/></button>
     </form>
     <span style="float: right">
           <button onclick="window.location.href = '?lang=en&page=${page}'">
